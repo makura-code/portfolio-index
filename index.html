@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>まくら｜静的サイト制作ポートフォリオ</title>
+<meta name="description" content="まくらの静的サイト制作ポートフォリオ。HTML/CSS/JavaScriptでのコーディング実績と対応範囲をまとめています。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F7A4C'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='18' fill='%23FFFFFF'%3E%E3%81%BE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Sans+JP:wght@400;500&family=Zen+Kaku+Gothic+New:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">メインコンテンツへスキップ</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <h1 class="site-header__name">まくら</h1>
+    <p class="site-header__role">静的サイト制作／独学でHTML・CSS・JavaScriptを学習中</p>
+  </div>
+</header>
+
+<main id="main">
+  <section class="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <h2 id="skills-heading" class="section-heading">対応できること</h2>
+      <ul class="skills__list">
+        <li class="skills__item">HTML/CSS/JavaScriptでのコーディング（デザイン支給からの実装）</li>
+        <li class="skills__item">レスポンシブ対応</li>
+        <li class="skills__item">GitHub管理、Netlifyでの公開運用</li>
+        <li class="skills__item">複数サイトを共通の設計で展開する構成</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="works" aria-labelledby="works-heading">
+    <div class="container">
+      <h2 id="works-heading" class="section-heading">制作実績</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card__head">
+            <h3 class="card__title">革製品説明サイトシリーズ</h3>
+            <span class="card__badge">4サイト</span>
+          </div>
+          <p class="card__description">革製品（財布・靴・カバンなど）の商品説明・お手入れ情報を扱う静的サイト群。同一の設計思想でコンテンツサイトを量産している。</p>
+          <ul class="card__tech" aria-label="使用技術">
+            <li class="card__tech-item">HTML</li>
+            <li class="card__tech-item">CSS</li>
+            <li class="card__tech-item">JavaScript</li>
+          </ul>
+          <p class="card__point">実装のポイント: 4サイト共通のCSS設計を切り出し、テーマカラーの変更のみで展開できる構成にした。</p>
+          <ul class="card__links">
+            <li class="card__links-item">
+              <a class="card__link" href="https://timely-frangollo-31f198.netlify.app" target="_blank" rel="noopener">kawagutsu-note<span class="visually-hidden">（別タブで開く）</span></a>
+            </li>
+            <li class="card__links-item">
+              <a class="card__link" href="https://whimsical-quokka-38e67a.netlify.app" target="_blank" rel="noopener">kawazaifu-note<span class="visually-hidden">（別タブで開く）</span></a>
+            </li>
+            <li class="card__links-item">
+              <a class="card__link" href="https://majestic-lebkuchen-fa4885.netlify.app" target="_blank" rel="noopener">kawa-note<span class="visually-hidden">（別タブで開く）</span></a>
+            </li>
+            <li class="card__links-item">
+              <a class="card__link" href="https://celadon-starship-9399e0.netlify.app" target="_blank" rel="noopener">oteire-note<span class="visually-hidden">（別タブで開く）</span></a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="stack" aria-labelledby="stack-heading">
+    <div class="container">
+      <h2 id="stack-heading" class="section-heading">使用技術 / 制作環境</h2>
+      <dl class="stack__list">
+        <div class="stack__row">
+          <dt class="stack__term">言語</dt>
+          <dd class="stack__desc">HTML / CSS / JavaScript</dd>
+        </div>
+        <div class="stack__row">
+          <dt class="stack__term">バージョン管理</dt>
+          <dd class="stack__desc">Git / GitHub</dd>
+        </div>
+        <div class="stack__row">
+          <dt class="stack__term">公開</dt>
+          <dd class="stack__desc">Netlify</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <h2 id="contact-heading" class="section-heading">連絡先</h2>
+    <p class="site-footer__text">お仕事のご相談はクラウドワークスのプロフィールからご連絡ください。</p>
+    <p class="site-footer__cta">
+      <a class="site-footer__link" href="https://crowdworks.jp/public/employees/6049756?ref=login_header" target="_blank" rel="noopener">クラウドワークスのプロフィールを見る<span class="visually-hidden">（別タブで開く）</span></a>
+    </p>
+    <p class="site-footer__meta">最終更新: 2026年8月</p>
+  </div>
+</footer>
+</body>
+</html>
